@@ -1,12 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from "../styles";
 
 const Wrapper = styled.footer`
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 42px;
+  bottom: 22px;
   text-align: center;
+
+  ${media.smDesktop`
+    bottom: 20px;
+  `};
 `;
 const Footer = () => {
   return (

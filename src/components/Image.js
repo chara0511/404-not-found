@@ -5,14 +5,13 @@ import { media } from "../styles";
 
 const Wrapper = styled.div`
   border: solid 1px yellow;
-  max-width: 286px;
-  max-height: 238px;
-  margin: 0 auto;
+
+  ${media.lgTablet`
+    width: 430px;
+  `};
 
   ${media.lgDesktop`
-    max-width: 540px;
-    max-height: 448px;
-    margin: 0;
+    width: 540px;
   `};
 `;
 

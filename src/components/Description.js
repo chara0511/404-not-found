@@ -11,13 +11,17 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 340px;
+  width: 340px;
   height: 380px;
 
+  ${media.lgTablet`
+    width: 430px;
+    height: 400px;
+  `};
+
   ${media.lgDesktop`
-    max-width: 586px;
-    height: 500px;
-    justify-content: space-around;
+    width: 586px;
+    height: 450px;
   `};
 `;
 

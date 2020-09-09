@@ -12,9 +12,12 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
 
+  align-items: center;
+
   ${media.smDesktop`
     flex-direction: row;
     align-items: center;
+    column-gap: 2em;
   `};
 `;
 

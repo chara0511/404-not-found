@@ -10,24 +10,33 @@ const {
 } = theme;
 
 const Container = styled.div`
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
   width: 100%;
   max-width: 375px;
   height: 949px;
   background: ${defaultColor};
-  padding: 20px ${fontSizes.xl};
+  padding: 0px 25px;
 
-  ${media.smDesktop`
+  ${media.lgTablet`
     max-width: 768px;
     height: 1024px;
-    padding: 30px 12px;
+  `};
+
+  ${media.smDesktop`
+    max-width: 1024px;
+    height: 100vh;
+    padding: 25px 52px;
+  `};
+
+  ${media.mdDesktop`
+    max-width: 1280px;
+    padding: 30px 56px;
   `};
 
   ${media.lgDesktop`
     max-width: 1440px;
-    height: 1080px;
-    padding: 40px 6px;
+    padding: 40px 77px;
   `};
 `;
 

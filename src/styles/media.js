@@ -2,6 +2,7 @@ import { css } from "styled-components";
 
 const sizes = {
   lgDesktop: 1440,
+  mdDesktop: 1280,
   smDesktop: 1024,
   lgTablet: 768,
   mdTablet: 600,
