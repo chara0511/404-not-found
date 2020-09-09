@@ -4,8 +4,6 @@ import image from "../image/Scarecrow.png";
 import { media } from "../styles";
 
 const Wrapper = styled.div`
-  border: solid 1px yellow;
-
   ${media.lgTablet`
     width: 430px;
   `};

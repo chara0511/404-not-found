@@ -10,13 +10,13 @@ const {
 } = theme;
 
 const Container = styled.div`
-  margin: 20px auto;
+  margin: auto;
   position: relative;
   width: 100%;
   max-width: 375px;
   height: 949px;
   background: ${defaultColor};
-  padding: 0px 25px;
+  padding: 20px 25px;
 
   ${media.lgTablet`
     max-width: 768px;

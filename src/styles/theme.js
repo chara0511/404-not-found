@@ -14,12 +14,12 @@ const theme = {
   },
 
   fontSizes: {
-    xs: "0.667em", // 12px
     sm: "0.778em", // 14px
     md: "0.889em", // 16px
     lg: "18px",
     xl: "1.333em", // 24px
     xxl: "2.667em", // 48px
+    xplus: "3.556em", // 64px
   },
 };
 

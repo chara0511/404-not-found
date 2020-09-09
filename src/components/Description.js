@@ -7,7 +7,6 @@ import DefaultButton from "../styles/defaultButton";
 const { fontSizes } = theme;
 
 const Wrapper = styled.div`
-  border: solid 1px brown;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,7 +28,12 @@ const Title = styled.h1`
   font-size: ${fontSizes.xxl};
   line-height: 71px;
   letter-spacing: -0.035em;
-  width: 340px;
+  width: 100%;
+
+  ${media.lgDesktop`
+    line-height: 95px;
+    font-size: ${fontSizes.xplus};
+  `};
 `;
 
 const Message = styled.p`
@@ -37,6 +41,14 @@ const Message = styled.p`
   line-height: 27px;
   letter-spacing: -0.035em;
   margin-top: -2em;
+  width: 328px;
+
+  ${media.lgDesktop`
+    width: 381px;
+    line-height: 36px;
+    font-size: ${fontSizes.xl};
+
+  `};
 `;
 
 const Description = () => {
