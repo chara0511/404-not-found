@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import { GlobalStyles, theme } from "./styles";
+import PageNotFound from "./components/PageNotFound";
 
+const {
+  colors: { defaultColor },
+  fontSizes,
+} = theme;
+
+const Container = styled.div`
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+  height: 949px;
+  background: ${defaultColor};
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px ${fontSizes.xl};
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+
+      <Container>
+        <PageNotFound />
+      </Container>
+    </>
   );
 }
 
