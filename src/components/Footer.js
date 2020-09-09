@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.footer`
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 42px;
   text-align: center;
-  padding: 1em;
 `;
 const Footer = () => {
   return (

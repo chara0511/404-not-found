@@ -43,7 +43,8 @@ html {
   }
 
   p {
-    color:${colors.textColor}
+    color:${colors.textColor};
+    margin: 0;
   }
 
   img {

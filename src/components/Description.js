@@ -1,27 +1,51 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../styles";
+import { theme, media } from "../styles";
+
+import DefaultButton from "../styles/defaultButton";
 
 const { fontSizes } = theme;
 
 const Wrapper = styled.div`
   border: solid 1px brown;
-  width: 328px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 340px;
+  height: 380px;
+
+  ${media.lgDesktop`
+    max-width: 586px;
+    height: 500px;
+    justify-content: space-around;
+  `};
 `;
 
-const Desc = styled.p`
+const Title = styled.h1`
+  font-size: ${fontSizes.xxl};
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  width: 340px;
+`;
+
+const Message = styled.p`
   font-size: ${fontSizes.lg};
   line-height: 27px;
   letter-spacing: -0.035em;
+  margin-top: -2em;
 `;
 
 const Description = () => {
   return (
     <Wrapper>
-      <Desc>
+      <Title>I have bad news for you</Title>
+
+      <Message>
         The page you are looking for might be removed or is temporarily
         unavailable
-      </Desc>
+      </Message>
+
+      <DefaultButton />
     </Wrapper>
   );
 };
