@@ -8,6 +8,10 @@ const Wrapper = styled.div`
     width: 430px;
   `};
 
+  ${media.smDesktop`
+    width: 480px;
+  `};
+
   ${media.lgDesktop`
     width: 540px;
   `};

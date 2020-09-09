@@ -18,6 +18,11 @@ const Wrapper = styled.div`
     height: 400px;
   `};
 
+  ${media.smDesktop`
+    width: 480px;
+    height: 425px;
+  `};
+
   ${media.lgDesktop`
     width: 586px;
     height: 450px;
